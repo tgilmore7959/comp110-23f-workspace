@@ -21,13 +21,13 @@ if str(word[2]) == str(single):
     count = count + 1
 if str(word[3]) == str(single):
     print(str(single) + " found at index 3")
-    count= count + 1
+    count = count + 1
 if str(word[4]) == str(single):
     print(str(single) + " found at index 4")
     count = count + 1
 if count == 0:
     print("No instances of " + single + " found in " + word)
 if count == 1:
-    print("1 instance of " + single + " found in "+ word)
+    print("1 instance of " + single + " found in " + word)
 else:
     print(str(count) + " instances of " + single + " found in " + word)
