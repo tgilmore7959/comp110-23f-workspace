@@ -8,7 +8,8 @@ secret_word = "python"
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-number_of_letters = 6
+# determine number of letters in sec word
+number_of_letters = len(secret_word)
 # prompt and set var guess
 guess = input(f"What is your {number_of_letters}-letter guess? ")
 # is it less than

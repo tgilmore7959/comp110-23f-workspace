@@ -1,4 +1,4 @@
-""" One Shot Wordle """
+"""One Shot Wordle."""
 __author__ = "730585444"
 # Setting word to guess
 secret_word = "python"
