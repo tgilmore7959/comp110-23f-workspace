@@ -21,7 +21,7 @@ result = ""
 index = 0
 while index < number_of_letters:
     if guess[index] == secret_word[index]:
-        result += GREEN_BOX
+        result += GREEN_BOX + " "
 #loop to search all index and if present it gets a yellow box  if false it gets white box then it
 #goes back to increase index and repeat ind search.
     else:
@@ -32,10 +32,17 @@ while index < number_of_letters:
                 present = True
             ind +=1
         if present:
-            result += YELLOW_BOX
+            result += YELLOW_BOX + " "
         else:
-            result += WHITE_BOX
+            result += WHITE_BOX + " "
     index += 1
-#printing results
+#printing result emoji boxes
 print(result)
-    
+#right or wrong
+if guess == secret_word:
+    print("Woo! You got it!")
+    exit()
+else:
+    guess != secret_word
+    print("Not Quite. Play again soon!")
+    exit()    
