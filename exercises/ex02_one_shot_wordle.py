@@ -14,8 +14,7 @@ number_of_letters = len(secret_word)
 guess = input(f"What is your {number_of_letters}-letter guess? ")
 # is it less than
 while len(guess) != number_of_letters:
-    print(f"That was not {number_of_letters} letters! Try again: ")
-    guess = input(f"What is your {number_of_letters}-letter guess? ")
+    guess = input(f"That was not {number_of_letters} letters! Try again: ")
 # variable for emoji box output
 result = ""
 # checking for matching (green)
