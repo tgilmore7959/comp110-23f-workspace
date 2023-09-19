@@ -41,8 +41,6 @@ print(result)
 # right or wrong
 if guess == secret_word:
     print("Woo! You got it!")
-    exit()
 else:
     guess != secret_word
-    print("Not Quite. Play again soon!")
-    exit()    
+    print("Not Quite. Play again soon!")   
