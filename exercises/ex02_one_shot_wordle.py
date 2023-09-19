@@ -10,7 +10,7 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 number_of_letters = 6
 # prompt and set var guess
-guess = input (f"What is your {number_of_letters}-letter guess? ")
+guess = input(f"What is your {number_of_letters}-letter guess? ")
 # is it less than
 while len(guess) != number_of_letters:
     print(f"That was not {number_of_letters} letters! Try again: ")
@@ -30,7 +30,7 @@ while index < number_of_letters:
         while ind < number_of_letters:
             if guess[index] == secret_word[ind]:
                 present = True
-            ind +=1
+            ind += 1
         if present:
             result += YELLOW_BOX + " "
         else:
