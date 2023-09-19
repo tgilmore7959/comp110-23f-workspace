@@ -1,5 +1,5 @@
 """One Shot Wordle."""
-__author__ = "730585444"
+__author__ = str("730585444")
 # I wrote a version that got to the yellow box step and absolutly didn't work...rewriting with
 # the knowlege that I'll have to change number of letters etc =)
 # Setting word to guess
