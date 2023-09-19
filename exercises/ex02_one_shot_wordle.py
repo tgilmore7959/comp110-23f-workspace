@@ -1,4 +1,4 @@
-""" One Shot Wordle """
+"""One Shot Wordle."""
 __author__ = "730585444"
 #I wrote a version that got to the yellow box step and absolutly didn't work...rewriting with
 #the knowlege that I'll have to change number of letters etc =)
@@ -27,7 +27,7 @@ while index < number_of_letters:
     else:
         ind = 0
         present = False
-        while ind < number_of_letters and not present:
+        while ind < number_of_letters:
             if guess[index] == secret_word[ind]:
                 present = True
             ind +=1
