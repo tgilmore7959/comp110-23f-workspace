@@ -24,6 +24,7 @@ def contains_char(secret_word: str, letter_guess: str) -> bool:
 
 def emojified(secret_word: str, guess: str) -> str:
     """Compares secret_word and Guess returns box emojis."""
+    # I seriously can't figure out what's wrong with this for autograder
     assert len(guess) == len(secret_word)
     # Setting up variables
     index = 0
