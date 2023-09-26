@@ -53,12 +53,14 @@ def main() -> None:
         print(f"=== Turn {turn}/6 ===")
         #Runs input guess with secret_word length and prompts user
         guess = input_guess(len(secret_word))
+        #adds emojiboxes
         result = emojified(secret_word, guess)
         print(result)
         if secret_word == guess:
             win = True
             print(f"You won in {turn}/6 turns!")        
         turn += 1
+    #exits look if true and not yet 6 trys
     if win == True:
         exit()
     print(f"X/6 - Sorry, Try again tomorrow!")
