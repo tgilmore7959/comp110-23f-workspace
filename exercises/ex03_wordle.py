@@ -4,9 +4,9 @@ __author__ = "730585444"
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-secret_word = "codes"
-guess = ""
-letter_guess = ""
+secret_word:  str = "codes"
+guess: str = ""
+letter_guess: str = ""
 # Function to search if a letter is present in the world
 
 
