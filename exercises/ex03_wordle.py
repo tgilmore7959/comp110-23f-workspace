@@ -47,6 +47,7 @@ def input_guess(char_num: int) -> str:
         guess = input(f"That wasn't {char_num} chars! Try Again: ")
     return (guess)
 
+
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     turn = 1
@@ -66,8 +67,5 @@ def main() -> None:
     # exits look if true and not yet 6 trys
     if win == False:
         print("X/6 - Sorry, Try again tomorrow!")
-    
-
-
 if __name__ == "__main__":
     main()
