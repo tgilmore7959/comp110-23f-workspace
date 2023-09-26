@@ -67,5 +67,7 @@ def main() -> None:
     # exits look if true and not yet 6 trys
     if win == False:
         print("X/6 - Sorry, Try again tomorrow!")
+
+
 if __name__ == "__main__":
     main()
