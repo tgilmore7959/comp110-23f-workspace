@@ -54,7 +54,7 @@ def main() -> None:
     turn = 1
     win = False
     number_of_turns = 6
-    while turn <= number_of_turns and win == False:
+    while turn <= number_of_turns and win is False:
         print(f"=== Turn {turn}/6 ===")
         # Runs input guess with secret_word length and prompts user
         guess = input_guess(len(secret_word))
@@ -66,7 +66,7 @@ def main() -> None:
             print(f"You won in {turn}/6 turns!")        
         turn += 1
     # exits look if true and not yet 6 trys
-    if win == False:
+    if win is False:
         print("X/6 - Sorry, Try again tomorrow!")
 
 
