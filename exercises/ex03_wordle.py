@@ -8,6 +8,8 @@ secret_word = "codes"
 guess = ""
 letter_guess = ""
 # Function to search if a letter is present in the world
+
+
 def contains_char(secret_word: str, letter_guess: str) -> bool:
     """Searches word for guess letter and returns true or false."""
     assert len(letter_guess) == 1
@@ -36,8 +38,9 @@ def emojified(secret_word: str, guess: str) -> str:
         index += 1
     return result
 
+
 def input_guess(char_num: int) -> str:
-    """Compares input number of characters to input guess"""
+    """Compares input number of characters to input guess."""
     # Sets guess to input term and compares to number of letters allowed returns try again if not eq
     guess = input(f"Enter a {char_num} character word: ")
     while len(guess) != char_num:
@@ -61,9 +64,9 @@ def main() -> None:
             print(f"You won in {turn}/6 turns!")        
         turn += 1
     # exits look if true and not yet 6 trys
-    if win == True:
-        exit()
-    print(f"X/6 - Sorry, Try again tomorrow!")
+    if win == False:
+        print("X/6 - Sorry, Try again tomorrow!")
+    
 
 
 if __name__ == "__main__":
