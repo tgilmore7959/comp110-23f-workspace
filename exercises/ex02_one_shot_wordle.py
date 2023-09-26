@@ -3,7 +3,7 @@ __author__ = "730585444"
 # I wrote a version that got to the yellow box step and absolutly didn't work...rewriting with
 # the knowlege that I'll have to change number of letters etc =)
 # Setting word to guess
-secret_word = "python"
+secret_word = "moist"
 # variables for emojis and number of letters
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
