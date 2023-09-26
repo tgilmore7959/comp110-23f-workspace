@@ -4,7 +4,7 @@ __author__ = "730585444"
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-secret_word:  str = "codes"
+secret_word: str = "codes"
 guess: str = ""
 letter_guess: str = ""
 # Function to search if a letter is present in the world
@@ -22,7 +22,7 @@ def contains_char(secret_word: str, letter_guess: str) -> bool:
     return present   
 
 
-def emojified(secret_word: str, guess: str) -> str:
+def emojified(guess: str, secret_word: str) -> str:
     """Compares secret_word and Guess returns box emojis."""
     # I seriously can't figure out what's wrong with this for autograder
     assert len(guess) == len(secret_word)
@@ -59,7 +59,7 @@ def main() -> None:
         # Runs input guess with secret_word length and prompts user
         guess = input_guess(len(secret_word))
         # adds emojiboxes
-        result = emojified(secret_word, guess)
+        result = emojified(guess, secret_word)
         print(result)
         if secret_word == guess:
             win = True
