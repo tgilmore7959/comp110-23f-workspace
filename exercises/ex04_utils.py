@@ -2,10 +2,12 @@
 ___author___ = 730585444
 
 
-def all(inputlist: list, guess: int) -> bool:
+def all(inputlist: list[int], guess: int) -> bool:
     """Searches for guess within three intiger list."""
+    # Checks if there was nothing entered for the list
     if len(inputlist) == 0:
         return False 
+    # While loop that checks if the first number is a match then removes it
     while len(inputlist) != 0:
         number = inputlist[0]
         if number != guess:
@@ -17,12 +19,15 @@ def all(inputlist: list, guess: int) -> bool:
         return True
 
 
-def max(inputlist: list) -> int:
+def max(inputlist: list[int]) -> int:
     """Determines greatest value."""
+    # Error for no input
     if len(inputlist) == 0:
         raise ValueError("max() arg is an empty list")
+    # Initialize var
     index = 1
     max_number = inputlist[0]
+    # Whle look goes thru each number makes max number the bigger of the two
     while index < len(inputlist):
         if max_number <= inputlist[index]:
             max_number = inputlist[index]
@@ -30,7 +35,7 @@ def max(inputlist: list) -> int:
     return int(max_number)
 
 
-def is_equal(list1: list, list2: list) -> bool:
+def is_equal(list1: list[int], list2: list[int]) -> bool:
     """Are they the same?"""
     if len(list1) != len(list2):
         return False
