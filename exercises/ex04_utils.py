@@ -4,6 +4,8 @@ ___author___ = 730585444
 
 def all(inputlist: list, guess: int) -> bool:
     """Searches for guess within three intiger list."""
+    if len(inputlist) == 0:
+        return False 
     while len(inputlist) != 0:
         number = inputlist[0]
         if number != guess:
@@ -25,10 +27,10 @@ def max(inputlist: list) -> int:
         if max_number <= inputlist[index]:
             max_number = inputlist[index]
         index += 1
-    return max_number
+    return int(max_number)
 
 
-def is_equal(list1: list, list2: list) -> True:
+def is_equal(list1: list, list2: list) -> bool:
     """Are they the same?"""
     if len(list1) != len(list2):
         return False
