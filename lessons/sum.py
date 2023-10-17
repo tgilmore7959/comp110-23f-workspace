@@ -1,5 +1,5 @@
 """Summing the elements of a list using different loops."""
-__author__ = 730585444
+__author__ = "730585444"
 
 
 def w_sum(vals: list[float]) -> float:
@@ -16,7 +16,7 @@ def f_sum(vals: list[float]) -> float:
     """For loop to add up list."""
     sum2 = 0.0
     for elem in vals:
-       sum2 += elem
+        sum2 += elem
     return sum2
 
 
