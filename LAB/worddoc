@@ -1,0 +1,31 @@
+from docx import Document
+
+# Load the document
+doc_path = "questions.docx"  # Replace with the path to your document
+doc = Document(doc_path)
+
+# Variables to store the current question and correct answers
+current_question = None
+correct_answers = []
+
+# Iterate through the paragraphs
+for para in doc.paragraphs:
+    if para.text.strip().endswith("(5 points)"):
+        # If the current question is not None, save the correct answers
+        if current_question is not None and correct_answers:
+            current_question.add_run("\n".join(correct_answers))
+
+        # Reset for the new question
+        current_question = para
+        correct_answers = []
+    elif para.text.startswith("*"):
+        # Add the correct answers to the list
+        correct_answers.append(para.text)
+
+# Add the last set of correct answers
+if current_question is not None and correct_answers:
+    current_question.add_run("\n".join(correct_answers))
+
+# Save the modified document
+new_doc_path = "questions2.docx"  # Replace with the path where you want to save the modified document
+doc.save(new_doc_path)
