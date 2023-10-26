@@ -1,9 +1,10 @@
-"""TODO: Beach scene."""
+"""Beach scene."""
  
 __author__ = "730585444"
  
 from turtle import Turtle, colormode, done 
 turt = Turtle()
+
 
 def draw_water(turt: Turtle) -> None:
     """Draws water."""
@@ -49,8 +50,8 @@ def draw_sun(turt: Turtle, x: float, y: float) -> None:
     turt.end_fill()
 
 
-def draw_tree(turt: Turtle, x: float, y:float) -> None:
-    "Draws a tree at coord"
+def draw_tree(turt: Turtle, x: float, y: float) -> None:
+    """Draws a tree at coord."""
     # Trunks
     turt.penup()
     turt.goto(x, y)
@@ -77,14 +78,18 @@ def draw_tree(turt: Turtle, x: float, y:float) -> None:
         turt.left(90)
     turt.end_fill()
 
+
 def main() -> None:
+    """Runs all drawing."""
     draw_sun(turt, -210, 150)
     draw_water(turt)
     draw_sand(turt)
     draw_tree(turt, -200, -250)
     draw_tree(turt, 200, -250)
 
+
 if __name__ == "__main__":
     main()
+    
 
 done()
