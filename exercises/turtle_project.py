@@ -2,7 +2,7 @@
  
 __author__ = "730585444"
  
-from turtle import Turtle, colormode, done 
+from turtle import Turtle, done 
 turt = Turtle()
 
 
@@ -58,9 +58,11 @@ def draw_tree(turt: Turtle, x: float, y: float) -> None:
     turt.color("brown")
     turt.begin_fill()
     turt.pendown()
-    turt.forward(30)  # Width
+    # Width
+    turt.forward(30)
     turt.left(90)
-    turt.forward(100) # Height
+    # Height
+    turt.forward(100)
     turt.left(90)
     turt.forward(30)
     turt.left(90)
@@ -90,6 +92,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    
+
 
 done()
