@@ -9,6 +9,8 @@ def zip(input_list1: list[str], input_list2: list[int]) -> dict[str, int]:
         return zipdict
     if len(input_list1) != len(input_list2):
         return zipdict
-    for item1, item2 in zip(input_list1, input_list2):
+    for i in range(len(input_list1)):
+        item1 = input_list1[i]
+        item2 = input_list2[i]
         zipdict[item1] = item2
     return zipdict
