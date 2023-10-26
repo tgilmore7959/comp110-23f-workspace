@@ -1,6 +1,6 @@
 """Testing my smmation function."""
 
-from sum_evens import sum_evens_in_list
+from lessons.sum_evens import sum_evens_in_list
 
 def test_empty_sum()-> None:
     """sum_evens_in_list of empty list should be 0."""
