@@ -24,4 +24,3 @@ else:
 
 for key in ice_cream:
     print(f"{key} has {ice_cream[key]} orders")
-
