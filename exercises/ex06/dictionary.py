@@ -20,7 +20,7 @@ def invert(input_dict: dict[str, str]) -> dict[str, str]:
 def favorite_color(color_dict: dict[str, str]) -> str:
     """Finds most popular color."""
     # Creates a dictionary that will have the color and count
-    color_count = dict()
+    color_count: dict[str, int] = {}
     # Cycles through checks if in dict if so, adds one if not, adds the color
     for name in color_dict:
         color = color_dict[name]
@@ -41,7 +41,7 @@ def favorite_color(color_dict: dict[str, str]) -> str:
 
 def count(input_list: list[str]) -> dict[str, int]:
     """Word Counter from list."""
-    output_dict = dict()
+    output_dict: dict[str, int] = {}
     for item in input_list:
         if item in output_dict:
             output_dict[item] += 1
@@ -50,9 +50,9 @@ def count(input_list: list[str]) -> dict[str, int]:
     return output_dict
 
 
-def alphabetizer(input_list: str) -> dict[str, list[str]]:
+def alphabetizer(input_list: list[str]) -> dict[str, list[str]]:
     """Alphabetizes and categorizes by letter."""
-    new_dict = {}
+    new_dict: dict[str, list[str]] = {}
     for word in input_list:
         # Gets first letter
         first_letter = word[0].lower()
