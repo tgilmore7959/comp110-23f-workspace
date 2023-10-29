@@ -12,3 +12,17 @@ def odds_and_evens(input_list: list[int]) -> list[int]:
         else:
             index += 1
     return new_list
+
+
+def short_words(words: list[str]) -> list[str]:
+    """Creates new list with words less than 5 letters."""
+    new_list: list[str] = []
+    index: int = 0
+    while index < len(words):
+        if len(words[index]) > 4:
+            print(f"{words[index]} is too long")
+            index += 1
+        else:
+            new_list.append(words[index])
+            index += 1
+    return new_list

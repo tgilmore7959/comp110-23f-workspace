@@ -1,0 +1,13 @@
+"""Dictionary Functions."""
+
+
+__author__ = "730585444"
+
+
+def invert(input_dict: dict[str, str]) -> dict[str, str]:
+    """Inverts the strings."""
+    output_dict = dict()
+    for key in input_dict:
+       value = input_dict[key]
+       output_dict_[value] = key
+    return output_dict
