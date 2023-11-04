@@ -3,6 +3,7 @@
 
 from lessons.classes.pizza import Pizza
 
+
 my_pizza: Pizza = Pizza()  # Constructor
 my_pizza.size = "large"
 my_pizza.toppings = 42
