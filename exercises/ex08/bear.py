@@ -1,7 +1,10 @@
-"""File to define Bear class"""
+"""File to define Bear class."""
+__author__ = "730585444"
+
 
 class Bear:
-    
+    """Bears."""
+
     age: int
     hunger_score: int
 
