@@ -9,8 +9,12 @@ class Pizza:
 =======
 
 class Pizza:
+<<<<<<< HEAD
     #attributes
 >>>>>>> 86d45bb (asdf)
+=======
+    # attributes
+>>>>>>> 2765f9a (asdf)
     # Think of these as variables each instance of my class will have
     # <name> : <type>
     size: str
