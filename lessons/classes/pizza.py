@@ -1,15 +1,22 @@
 """Defining a Class!"""
 
+<<<<<<< HEAD
 from __future__ import annotations
 
 
 class Pizza:
     # attributes
+=======
+
+class Pizza:
+    #attributes
+>>>>>>> 86d45bb (asdf)
     # Think of these as variables each instance of my class will have
     # <name> : <type>
     size: str
     toppings: int
     gluten_free: bool
+<<<<<<< HEAD
     
     def __init__(self, inp_size: str, inp_toppings: int, inp_gf: bool):
         """My constructor."""
@@ -37,4 +44,6 @@ class Pizza:
         """Make a new pizza with existing pizzas properties and add toppings."""
         new_pizza: Pizza = Pizza(self.size, self.toppings + num_toppings, self.gluten_free)
         return new_pizza
+=======
+>>>>>>> 86d45bb (asdf)
     
