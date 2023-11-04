@@ -2,7 +2,7 @@
 
 
 class Pizza:
-    #attributes
+    # attributes
     # Think of these as variables each instance of my class will have
     # <name> : <type>
     size: str
