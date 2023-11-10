@@ -70,6 +70,7 @@ def update_attendance(attend: dict[str, list[str]], day: str, student: str) -> d
     # checks if day in log and adds if nec
     if day not in attend:
         attend[day] = []
-    # adds student to the day    
-    attend[day].append(student)
+    # adds student to the day 
+    if student not in attend[day]:   
+        attend[day].append(student)
     return attend
