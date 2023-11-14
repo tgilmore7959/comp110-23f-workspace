@@ -18,10 +18,7 @@ def scale_by(self, factor: int) -> None:
     self.x *= factor
     self.y *= factor
 
-
-def scale(self, factor: int) -> Point:
-    """Returns a new point with X and Y equal to self.x * factor and self.y * factor."""
-    new_point: Point = Point()
-    new_point.x = self.x * factor
-    new_point.y = self.y * factor
-    return new_point
+    def scale(self, factor: int) -> Point:
+        """Returns a new point with X and Y equal to self.x * factor and self.y * factor."""
+        new_point: Point = Point(self.x * factor, self.y * factor)
+        return new_point
